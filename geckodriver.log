@@ -1,0 +1,73 @@
+1498286039048	geckodriver	INFO	Listening on 127.0.0.1:50234
+1498286040498	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286049453	Marionette	INFO	Listening on port 43322
+1498286050426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286262218	geckodriver	INFO	Listening on 127.0.0.1:55585
+1498286264031	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286268478	Marionette	INFO	Listening on port 33049
+1498286268645	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286426554	Marionette	INFO	Ceased listening
+1498286428832	geckodriver	INFO	Listening on 127.0.0.1:60462
+1498286430317	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286434258	Marionette	INFO	Listening on port 43056
+1498286434371	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286443676	Marionette	INFO	Ceased listening
+1498286444695	geckodriver	INFO	Listening on 127.0.0.1:34849
+1498286446872	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286450059	Marionette	INFO	Listening on port 38716
+1498286450125	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286462672	Marionette	INFO	Ceased listening
+1498286647485	geckodriver	INFO	Listening on 127.0.0.1:48327
+1498286648559	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286656712	Marionette	INFO	Listening on port 38065
+1498286656794	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286681711	Marionette	INFO	Ceased listening
+1498286685835	geckodriver	INFO	Listening on 127.0.0.1:60395
+1498286686909	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286689783	Marionette	INFO	Listening on port 40368
+1498286689905	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286765355	geckodriver	INFO	Listening on 127.0.0.1:50970
+1498286767554	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286771861	Marionette	INFO	Listening on port 39118
+1498286772091	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286774797	Marionette	INFO	Ceased listening
+1498286813657	geckodriver	INFO	Listening on 127.0.0.1:52878
+1498286815191	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286819526	Marionette	INFO	Listening on port 45396
+1498286819826	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498286848608	Marionette	INFO	Ceased listening
+1498286850902	Marionette	INFO	Ceased listening
+1498286852846	geckodriver	INFO	Listening on 127.0.0.1:48725
+1498286853922	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498286856281	Marionette	INFO	Listening on port 41999
+1498286856374	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498287004675	geckodriver	INFO	Listening on 127.0.0.1:48668
+1498287005742	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498287008708	Marionette	INFO	Listening on port 40504
+1498287008911	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:32730): Gtk-CRITICAL **: gtk_window_resize: assertion 'height > 0' failed
+1498287112284	Marionette	INFO	Ceased listening
+1498287114563	Marionette	INFO	Ceased listening
+1498287117745	geckodriver	INFO	Listening on 127.0.0.1:37287
+1498287118820	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498287121346	Marionette	INFO	Listening on port 42484
+1498287121748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498287180398	geckodriver	INFO	Listening on 127.0.0.1:45038
+1498287181472	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498287183783	Marionette	INFO	Listening on port 46736
+1498287183899	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
