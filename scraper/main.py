@@ -8,8 +8,8 @@ studentID = 811800
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
 driver = webdriver.Firefox()
 driver.get(MASTER_URL)
-studentIdList = open('student-id-list', 'w')
-nonStudentIdList = open('non-student-id-list', 'w')
+studentIdList = open('data/student-id-list', 'w')
+nonStudentIdList = open('data/non-student-id-list', 'w')
 
 
 def waitForPageToLoad():
