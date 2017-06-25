@@ -18,11 +18,11 @@ def logout():
 	logout = driver.find_element_by_class_name("globalAnchor")
 	# click it
 	logout.send_keys(Keys.RETURN)
-
+	# go back to home page
 	driver.get(MASTER_URL)
 
 def login():
-	# make sure we are on correcr page
+	# make sure we are on correct page
 	assert "VSB webcat" in driver.title
 	# find login field
 	elem = driver.find_element_by_name("sec1")
@@ -35,12 +35,14 @@ def getLoggedInName():
 	waitForPageToLoad()
 	name = driver.find_element_by_xpath("//td[@title='Name']")
 	loggedInName = name.get_attribute('innerHTML')
-	print(loggedInName)
+	
+	username = loggedInName.replace("Welcome ", "")
+	username = username.replace("&nbsp;", " ")
+	print(username)
 
-
-login()
 while True:
 	try: 
+		login()
 		getLoggedInName()
 		logout()
 
@@ -48,7 +50,7 @@ while True:
 		logout()
 
 	studentID += 1
-	login()
+
 
 
 
