@@ -338,3 +338,144 @@ Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
 Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
 1498367684617	Marionette	INFO	Listening on port 35731
 1498367684711	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368333966	geckodriver	INFO	Listening on 127.0.0.1:51838
+1498368335039	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368339252	Marionette	INFO	Listening on port 38740
+1498368339418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368347221	Marionette	INFO	Ceased listening
+1498368365928	geckodriver	INFO	Listening on 127.0.0.1:54648
+1498368367000	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368370233	Marionette	INFO	Listening on port 40024
+1498368370332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498368413245	geckodriver	INFO	Listening on 127.0.0.1:51976
+1498368414316	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368416643	Marionette	INFO	Listening on port 45349
+1498368416747	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498368476312	geckodriver	INFO	Listening on 127.0.0.1:40904
+1498368477387	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368480535	Marionette	INFO	Listening on port 45169
+1498368480636	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368509120	geckodriver	INFO	Listening on 127.0.0.1:44127
+1498368510193	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368511971	geckodriver	INFO	Listening on 127.0.0.1:38439
+1498368513044	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368515467	Marionette	INFO	Listening on port 38613
+1498368515642	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498368547104	geckodriver	INFO	Listening on 127.0.0.1:33445
+1498368548183	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368550529	Marionette	INFO	Listening on port 45285
+1498368550674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498368594216	geckodriver	INFO	Listening on 127.0.0.1:39100
+1498368595287	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368597977	Marionette	INFO	Listening on port 32973
+1498368598077	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498368697471	geckodriver	INFO	Listening on 127.0.0.1:48543
+1498368698550	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368700244	Marionette	INFO	Ceased listening
+1498368700985	Marionette	INFO	Listening on port 39653
+1498368701055	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368758187	geckodriver	INFO	Listening on 127.0.0.1:46491
+1498368759264	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368761482	Marionette	INFO	Listening on port 45737
+1498368761608	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368816841	geckodriver	INFO	Listening on 127.0.0.1:55631
+1498368817915	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368820829	Marionette	INFO	Listening on port 44651
+1498368820889	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498368915455	geckodriver	INFO	Listening on 127.0.0.1:56326
+1498368916527	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498368918769	Marionette	INFO	Listening on port 36175
+1498368918883	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498369000970	geckodriver	INFO	Listening on 127.0.0.1:52083
+1498369002042	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369004143	Marionette	INFO	Listening on port 35943
+1498369004229	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498369044140	geckodriver	INFO	Listening on 127.0.0.1:56049
+1498369045213	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369047432	Marionette	INFO	Listening on port 39990
+1498369047519	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498369127566	geckodriver	INFO	Listening on 127.0.0.1:47072
+1498369128632	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369130958	Marionette	INFO	Listening on port 44773
+1498369131039	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498369174229	geckodriver	INFO	Listening on 127.0.0.1:49495
+1498369175308	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369177503	Marionette	INFO	Listening on port 43233
+1498369177608	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498369184319	Marionette	INFO	Ceased listening
+1498369241143	geckodriver	INFO	Listening on 127.0.0.1:46408
+1498369242213	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369244470	Marionette	INFO	Listening on port 44023
+1498369244582	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1498369297200	geckodriver	INFO	Listening on 127.0.0.1:45001
+1498369298278	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369300517	Marionette	INFO	Listening on port 43159
+1498369300615	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498369310923	geckodriver	INFO	Listening on 127.0.0.1:39425
+1498369311993	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369314753	Marionette	INFO	Listening on port 45467
+1498369314840	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498369439395	geckodriver	INFO	Listening on 127.0.0.1:49086
+1498369440467	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369442804	Marionette	INFO	Listening on port 42504
+1498369442906	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498369544743	geckodriver	INFO	Listening on 127.0.0.1:56867
+1498369545815	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498369548217	Marionette	INFO	Listening on port 35903
+1498369548284	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/jsonview/converter-sniffer.js, line 68: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1498411948850	geckodriver	INFO	Listening on 127.0.0.1:60253
+1498411949921	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498411953748	Marionette	INFO	Listening on port 42519
+1498411953840	Marionette	WARN	TLS certificate errors will be ignored for this session
+1498411980322	geckodriver	INFO	Listening on 127.0.0.1:33020
+1498411981392	geckodriver::marionette	INFO	Starting browser /usr/lib/firefox/firefox.sh with args ["-marionette"]
+Fontconfig error: "~/.fonts.conf", line 1: XML declaration not well-formed
+1498411983262	Marionette	INFO	Ceased listening
+1498411983986	Marionette	INFO	Listening on port 38866
+1498411984068	Marionette	WARN	TLS certificate errors will be ignored for this session
