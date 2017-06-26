@@ -3,8 +3,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import MySQLdb
 
-studentID = 811800
+# Open database connection
+db = MySQLdb.connect("localhost","root","","StudentDB")
+
+# prepare a cursor object using cursor() method
+cursor = db.cursor()
+
+studentID = 294
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
 driver = webdriver.Firefox()
 driver.get(MASTER_URL)
@@ -13,14 +20,17 @@ nonStudentIdList = open('data/non-student-id-list', 'w')
 
 
 def waitForPageToLoad():
-	time.sleep(1)
+	time.sleep(0.3)
 
 def writeToFile(studentName, studentID, file):
 	studentName = str(studentName)
 	studentID = str(studentID)
+	sql = "INSERT INTO STUDENTS (Student_Number, Name) VALUES ('%s', '%s');" % (studentID, studentName)
 
 	if file == 'student-id-list':
-		studentIdList.write(studentID +  studentName + '\n')
+		cursor.execute(sql)
+		db.commit()
+
 
 	if file == 'non-student-id-list':
 		nonStudentIdList.write(studentID + '\n')
@@ -69,3 +79,4 @@ while True:
 		logout()
 
 	studentID += 1
+
