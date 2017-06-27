@@ -4,6 +4,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import MySQLdb
+import sys
+
+caps = webdriver.DesiredCapabilities().FIREFOX
+caps["marionette"] = False
+
+driver = webdriver.Firefox()
 
 # Open database connection
 db = MySQLdb.connect("localhost","root","","StudentDB")
@@ -11,16 +17,20 @@ db = MySQLdb.connect("localhost","root","","StudentDB")
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
 
-studentID = 294
+# started at 811000 and 621000
+
+# last 811 number: 814397
+# last 621 number: 624494
+studentID = int(sys.argv[1])
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
-driver = webdriver.Firefox()
+
 driver.get(MASTER_URL)
 studentIdList = open('data/student-id-list', 'w')
 nonStudentIdList = open('data/non-student-id-list', 'w')
 
 
 def waitForPageToLoad():
-	time.sleep(0.3)
+	time.sleep(0.2)
 
 def writeToFile(studentName, studentID, file):
 	studentName = str(studentName)
@@ -63,6 +73,7 @@ def getLoggedInName():
 
 	username = loggedInName.replace("Welcome ", "")
 	username = username.replace("&nbsp;", " ")
+	username = username.replace(" ", "")
 	print(username)
 
 	writeToFile(username, studentID, 'student-id-list')
@@ -76,7 +87,7 @@ while True:
 
 	except: 
 		writeToFile('', studentID, 'non-student-id-list')
-		logout()
+		
 
 	studentID += 1
 
