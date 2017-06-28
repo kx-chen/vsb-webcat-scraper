@@ -97,7 +97,12 @@ while True:
 	except:
                 print "not assigned to anybody."
 		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
+
+	studentID += 1
+	
+	if studentID > int(sys.argv[2]):
+                driver.quit()
 		
         
-	studentID += 1
+
 
