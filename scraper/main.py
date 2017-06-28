@@ -20,9 +20,10 @@ cursor = db.cursor()
 # started at 811000 and 621000
 
 # last 811 number: 814397
-# last 621 number: 624494
+# last 621 number: 629601
 studentID = int(sys.argv[1])
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
+LOGIN_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp"
 
 driver.get(MASTER_URL)
 studentIdList = open('data/student-id-list', 'w')
@@ -56,7 +57,15 @@ def logout():
 
 def login():
 	# make sure we are on correct page
-	assert "VSB webcat" in driver.title
+	#if driver.current_url != MASTER_URL:
+         #       driver.get(MASTER_URL)
+         #       print "not equal to master_url"
+                
+        if driver.current_url != LOGIN_URL:
+                print "not equal to login_url"
+                print driver.current_url
+                driver.get(MASTER_URL)
+                
 
 	# find login field
 	elem = driver.find_element_by_name("sec1")
@@ -85,9 +94,10 @@ while True:
 		getLoggedInName()
 		logout()
 
-	except: 
-		writeToFile('', studentID, 'non-student-id-list')
+	except:
+                print "not assigned to anybody."
+		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
 		
-
+        
 	studentID += 1
 
