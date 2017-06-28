@@ -35,12 +35,12 @@ def logAndPrint(text):
         studentIdList.write(text + '\n')
 
 def waitForPageToLoad():
-	time.sleep(0.2)
+	time.sleep(0.5)
 
 def writeToFile(studentName, studentID, file):
 	studentName = str(studentName)
 	studentID = str(studentID)
-	sql = "INSERT INTO STUDENTS (Student_Number, Name) VALUES ('%s', '%s');" % (studentID, studentName)
+	sql = "INSERT INTO STUDENTS (Student_Number, Name, Scraped_Date) VALUES ('%s', '%s', '%s');" % (studentID, studentName, time.strftime('%Y-%m-%d %H:%M:%S'))
 
 	if file == 'student-id-list':
 		cursor.execute(sql)
@@ -52,19 +52,12 @@ def writeToFile(studentName, studentID, file):
 
 def logout():
 	waitForPageToLoad()
-	# globalAnchor is the logout button
+
 	logout = driver.find_element_by_class_name("globalAnchor")
-	# click it
 	logout.send_keys(Keys.RETURN)
-	# go back to home page
 	driver.get(MASTER_URL)
 
 def login():
-	# make sure we are on correct page
-	#if driver.current_url != MASTER_URL:
-         #       driver.get(MASTER_URL)
-         #       print "not equal to master_url"
-                
         if driver.current_url != LOGIN_URL:
                 driver.get(MASTER_URL)
                 
