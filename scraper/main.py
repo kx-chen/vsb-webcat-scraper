@@ -29,36 +29,40 @@ driver.get(MASTER_URL)
 studentIdList = open('data/student-id-list', 'w')
 nonStudentIdList = open('data/non-student-id-list', 'w')
 
-def logAndPrint(text):
+def printAndLog(text):
         text = str(text)
         print text
         studentIdList.write(text + '\n')
 
-def waitForPageToLoad():
-	time.sleep(0.5)
+def waitForPageToLoad(waitTime):
+	time.sleep(waitTime)
 
 def writeToFile(studentName, studentID, file):
 	studentName = str(studentName)
 	studentID = str(studentID)
-	sql = "INSERT INTO STUDENTS (Student_Number, Name, Scraped_Date) VALUES ('%s', '%s', '%s');" % (studentID, studentName, time.strftime('%Y-%m-%d %H:%M:%S'))
+	scraped_date = time.strftime('%Y-%m-%d %H:%M:%S')
+	scraped_date = str(scraped_date)
+	
+	sql = "INSERT INTO STUDENTS (Student_Number, Name, Scraped_Date) VALUES ('%s', '%s', '%s');" % (studentID, studentName, scraped_date)
 
 	if file == 'student-id-list':
 		cursor.execute(sql)
 		db.commit()
 
 
-	if file == 'non-student-id-list':
-		nonStudentIdList.write(studentID + '\n')
-
 def logout():
-	waitForPageToLoad()
-
+	waitForPageToLoad(0.2)
+	# globalAnchor is the logout button
 	logout = driver.find_element_by_class_name("globalAnchor")
+	# click it
 	logout.send_keys(Keys.RETURN)
+	# go back to home page
 	driver.get(MASTER_URL)
 
 def login():
         if driver.current_url != LOGIN_URL:
+                # printAndLog("not equal to login_url")
+                # printAndLog(driver.current_url)
                 driver.get(MASTER_URL)
                 
 
@@ -66,11 +70,11 @@ def login():
 	elem = driver.find_element_by_name("sec1")
 	elem.clear()
 	elem.send_keys(studentID)
-	logAndPrint(studentID)
+	printAndLog(studentID)
 	elem.send_keys(Keys.RETURN)
 
 def getLoggedInName():
-	waitForPageToLoad()
+	waitForPageToLoad(0.5)
 
 	name = driver.find_element_by_xpath("//td[@title='Name']")
 	loggedInName = name.get_attribute('innerHTML')
@@ -78,7 +82,9 @@ def getLoggedInName():
 	username = loggedInName.replace("Welcome ", "")
 	username = username.replace("&nbsp;", " ")
 	username = username.replace(" ", "")
-	logAndPrint(username)
+	printAndLog(username)
+
+	writeToFile(username, studentID, 'student-id-list')
 
 
 while True:
@@ -88,7 +94,8 @@ while True:
 		logout()
 
 	except:
-                logAndPrint("not assigned to anybody.")
+                logout()
+                printAndLog("Not assigned to anybody.")
 		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
 
 	studentID += 1
