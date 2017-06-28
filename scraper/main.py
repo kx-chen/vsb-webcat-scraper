@@ -29,6 +29,10 @@ driver.get(MASTER_URL)
 studentIdList = open('data/student-id-list', 'w')
 nonStudentIdList = open('data/non-student-id-list', 'w')
 
+def logAndPrint(text):
+        text = str(text)
+        print text
+        studentIdList.write(text + '\n')
 
 def waitForPageToLoad():
 	time.sleep(0.2)
@@ -62,8 +66,6 @@ def login():
          #       print "not equal to master_url"
                 
         if driver.current_url != LOGIN_URL:
-                print "not equal to login_url"
-                print driver.current_url
                 driver.get(MASTER_URL)
                 
 
@@ -71,7 +73,7 @@ def login():
 	elem = driver.find_element_by_name("sec1")
 	elem.clear()
 	elem.send_keys(studentID)
-	print(studentID)
+	logAndPrint(studentID)
 	elem.send_keys(Keys.RETURN)
 
 def getLoggedInName():
@@ -83,9 +85,7 @@ def getLoggedInName():
 	username = loggedInName.replace("Welcome ", "")
 	username = username.replace("&nbsp;", " ")
 	username = username.replace(" ", "")
-	print(username)
-
-	writeToFile(username, studentID, 'student-id-list')
+	logAndPrint(username)
 
 
 while True:
@@ -95,7 +95,7 @@ while True:
 		logout()
 
 	except:
-                print "not assigned to anybody."
+                logAndPrint("not assigned to anybody.")
 		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
 
 	studentID += 1
