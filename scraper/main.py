@@ -1,5 +1,6 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*
+import selenium.common.exceptions
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -20,7 +21,7 @@ cursor = db.cursor()
 # started at 811000 and 621000
 
 # last 811 number: 814397
-# last 621 number: 629601
+# last 621 number: 652917
 studentID = int(sys.argv[1])
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
 LOGIN_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp"
@@ -51,7 +52,7 @@ def writeToFile(studentName, studentID, file):
 
 
 def logout():
-	waitForPageToLoad(0.2)
+	waitForPageToLoad(0.7)
 	# globalAnchor is the logout button
 	logout = driver.find_element_by_class_name("globalAnchor")
 	# click it
@@ -93,7 +94,7 @@ while True:
 		getLoggedInName()
 		logout()
 
-	except:
+	except selenium.common.exceptions.NoSuchElementException:
                 logout()
                 printAndLog("Not assigned to anybody.")
 		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
