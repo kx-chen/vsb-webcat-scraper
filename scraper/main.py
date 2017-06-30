@@ -21,7 +21,7 @@ cursor = db.cursor()
 # started at 811000 and 621000
 
 # last 811 number: 814397
-# last 621 number: 652917
+# last 621 number: 634202
 studentID = int(sys.argv[1])
 MASTER_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp?session=&profile=ls&auth=false&submenu=subtab13&date="
 LOGIN_URL = "http://webcat.vsb.bc.ca/ipac20/ipac.jsp"
@@ -30,6 +30,20 @@ driver.get(MASTER_URL)
 studentIdList = open('data/student-id-list', 'w')
 nonStudentIdList = open('data/non-student-id-list', 'w')
 
+def ensureNotLoggedIn():
+        """ returns False if not logged in and True if logged in """
+        try:
+                driver.find_element_by_link_text("Account Overview")
+                return True
+                
+        except selenium.common.exceptions.NoSuchElementException:
+                return False
+
+        else:
+                print "Unknown logged in state. Redirecting."
+                return True
+
+        
 def printAndLog(text):
         text = str(text)
         print text
@@ -44,7 +58,7 @@ def writeToFile(studentName, studentID, file):
 	scraped_date = time.strftime('%Y-%m-%d %H:%M:%S')
 	scraped_date = str(scraped_date)
 	
-	sql = "INSERT INTO STUDENTS (Student_Number, Name, Scraped_Date) VALUES ('%s', '%s', '%s');" % (studentID, studentName, scraped_date)
+	sql = """INSERT INTO STUDENTS (Student_Number, Name, Scraped_Date) VALUES ("%s", "%s", "%s");""" % (studentID, studentName, scraped_date)
 
 	if file == 'student-id-list':
 		cursor.execute(sql)
@@ -95,9 +109,10 @@ while True:
 		logout()
 
 	except selenium.common.exceptions.NoSuchElementException:
-                logout()
+                if ensureNotLoggedIn():
+                        driver.get(MASTER_URL)
                 printAndLog("Not assigned to anybody.")
-		cursor.execute("SELECT * FROM STUDENTS ORDER BY ID DESC LIMIT 1;")
+		
 
 	studentID += 1
 	
